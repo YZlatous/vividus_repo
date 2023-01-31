@@ -6,10 +6,16 @@ ext.buildSystemDir = file("${buildSystemPath}")
 
 apply from: "${buildSystemPath}/vividus-test-project.gradle"
 
-ext {
-    vividusVersion = '0.5.1'
-}
-
 dependencies {
-    implementation(group: 'org.vividus', name: 'vividus', version: vividusVersion)
+    implementation(group: 'org.vividus', name: 'vividus', version: '0.5.3-SNAPSHOT')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-visual', version: '0.5.3-SNAPSHOT')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-web-app', version: '0.5.3-SNAPSHOT')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-rest-api', version: '0.5.4-SNAPSHOT')
+    implementation(group: 'org.vividus', name: 'vividus-allure-adaptor', version: '0.5.3-SNAPSHOT')
+    implementation(group: 'org.vividus', name: 'vividus-analytics', version: '0.5.3-SNAPSHOT')
+    implementation(group: 'org.vividus', name: 'vividus-agent-reportportal', version: '0.5.3-SNAPSHOT')
+    implementation(group: 'org.vividus', name: 'vividus-engine', version: '0.5.3-SNAPSHOT')
+    implementation(group: 'org.vividus', name: 'vividus-extension-selenium', version: '0.5.3-SNAPSHOT')
+    implementation(group: 'org.vividus', name: 'vividus-plugin-html', version: '0.5.3-SNAPSHOT')
+    implementation(group: 'org.vividus', name: 'vividus-reporter', version: '0.5.3-SNAPSHOT')
 }
